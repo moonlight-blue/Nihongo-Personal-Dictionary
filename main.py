@@ -55,7 +55,10 @@ except:
 def sendEmail(): 
     try:
         write_file()
-        fromaddr = "nihongopersonaldictionary@gmail.com"
+        credentials=[]
+        with open("credentials.txt","r") as f:
+            credentials=f.readline().split(",")
+        fromaddr = credentials[0]
         toaddr = "paramjangale@gmail.com"
         
         # instance of MIMEMultipart
@@ -96,7 +99,7 @@ def sendEmail():
         s.starttls()
         
         # Authentication
-        sending_status=s.login(fromaddr, "sxsvbulvkjeakjbo")
+        sending_status=s.login(fromaddr, credentials[1])
         
         # Converts the Multipart msg into a string
         text = msg.as_string()
@@ -173,7 +176,7 @@ def clearDB():
 
 def write_file():
     try:
-        with open (file_name+".txt",'w') as f:
+        with open(file_name+".txt",'w') as f:
             sort_by_val=sort_by.get()
             if sort_by_val:
                 cursor.execute("SELECT * FROM words ORDER BY english;")

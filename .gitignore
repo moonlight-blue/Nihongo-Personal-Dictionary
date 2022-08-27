@@ -39,7 +39,7 @@ pip-delete-this-directory.txt
 Nihongo_Personal_Dictionary.txt
 nihongo.db
 tempCodeRunnerFile.py
-
+credentials.txt
 # Unit test / coverage reports
 htmlcov/
 .tox/

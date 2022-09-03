@@ -1,6 +1,6 @@
 # Nihongo-Personal-Dictionary
 
-![Screenshot](https://github.com/moonlight-blue/Nihongo-Personal-Dictionary/blob/master/screenshot.png?raw=true)
+![Screenshot](https://github.com/moonlight-blue/Nihongo-Personal-Dictionary/blob/main/screenshot.png?raw=true)
 
 Nihongo Personal Dictionary can be used to store English words with the corresponding Japanese word. 
 

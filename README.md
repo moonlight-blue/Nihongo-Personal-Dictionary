@@ -5,6 +5,7 @@
 Nihongo Personal Dictionary can be used to store English words with the corresponding Japanese word. 
 
 Nihongo Personal Dictionary is only suited for the Windows operating system.
+
 ---
 ### Modules used in implementation
 
